@@ -128,7 +128,7 @@
     }
 
     function carregarCafes(pagina) {
-        $.get('/api/cafe',{page: pagina}, function(resp) {
+        $.get('{{ asset('/') }}/api/cafe',{page: pagina}, function(resp) {
             console.log(resp);
             console.log(resp.data.length);
             montarPosts(resp);
@@ -160,7 +160,7 @@
      $.ajax({
       type:"POST",
       data:cafe,
-      url:"/api/cafe",
+      url:"{{ asset('/') }}/api/cafe",
       success:function(data){
        lista = "<tr>" +
        "<td>" +data.id +   "</td>" +
