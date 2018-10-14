@@ -45,7 +45,7 @@
     $("#search_form").submit(function(event){
        event.preventDefault();
        pesquisarCafe();
-       
+        $(window).scrollTop(0);
     });
 
 
