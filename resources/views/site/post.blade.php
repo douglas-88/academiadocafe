@@ -27,7 +27,7 @@
              $.ajax({
                     type:"GET",
                     data:cafe.id,
-                    url:"/api/cafe/"+cafe.id,
+                    url:"{{ asset('/') }}/api/cafe/"+cafe.id,
                     success:function(resposta){
                     
                        console.log(resposta);
@@ -65,7 +65,7 @@
      $.ajax({
       type:"POST",
       data:cafe,
-      url:"/api/cafe",
+      url:"{{ asset('/') }}/api/cafe",
       success:function(data){
        lista = "<tr>" +
        "<td>" +data.id +   "</td>" +
