@@ -136,6 +136,7 @@
             $("#paginationNav>ul>li>a").click(function(){
                 // console.log($(this).attr('pagina') );
                 carregarCafes($(this).attr('pagina'));
+                 $(window).scrollTop(0);
             })
            
         }); 
