@@ -12,9 +12,4 @@ Os endpoints ficariam, por exemplo:
 
 /*1.*/Route::post("/cafe","CafeController@store")->name("json-insere-cafe");
 /*2.*/Route::get("/cafe","CafeController@index")->name("json-lista-cafe");
-/*3.*/Route::get("/cafe/{id}","CafeController@showJson")->name("json-lista-cafe-id");
-
-
-
-
-
+/*3.*/Route::get("/cafe/{cafe}","CafeController@showJson")->name("json-lista-cafe-id");
